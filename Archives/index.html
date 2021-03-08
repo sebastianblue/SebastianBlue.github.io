@@ -13,6 +13,7 @@
 <link rel="stylesheet" src="https://use.typekit.net/dwd3cvg.css">
 <!-- ><script type="text/javascript" src="./lib/turn.min.js"></script> --> 
 
+<div class="gallery"></div>
 
 <style>
 
@@ -24,7 +25,21 @@
    }  
 
    /* Basic sample */
+   
+body{
+	overflow:hidden;
+	background-color:#000000;
+	margin:0;
+	padding:0;
+  
+}
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
 
 @import url("https://p.typekit.net/p.css?s=1&k=dwd3cvg&ht=tk&f=10805.10807.42667&a=54175551&app=typekit&e=css");
 
